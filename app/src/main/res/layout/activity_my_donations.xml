@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/donation_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Donations"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:background="@color/color_primary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food"
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="600dp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/food_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_btn"
+        android:text="Food"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/items"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="404dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/item_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_btn"
+        android:text="Items"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/blood"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/blood_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_btn"
+        android:text="Blood"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+</LinearLayout>
+
+
+

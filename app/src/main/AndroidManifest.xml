@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ehsaas">
+    <!--
+       The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+       Google Maps Android API v2, but you must specify either coarse or fine
+       location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ehsas">
+        <activity android:name=".UI.SignUpLogin.ForgotPassword"/>
+        <activity android:name=".UI.SignUpLogin.SignUpVolunteer"/>
+        <activity android:name=".UI.Volunteer.SelectToDeliver"/>
+        <activity android:name=".UI.Volunteer.CompletedDeliver"/>
+        <activity android:name=".UI.Volunteer.InProgressDeliver"/>
+        <activity android:name=".UI.Blood.Receiver.RequestBlood"/>
+        <activity android:name=".UI.Activities.UsedItems.Receiver.RequestUsedItem"/>
+        <activity android:name=".UI.Activities.UsedItems.Receiver.SelectUsedItemReceiver"/>
+        <activity android:name=".UI.Profile.RequestForDonations"/>
+        <activity android:name=".UI.Food.Receiver.RequestFood"/>
+        <activity android:name=".UI.Food.Receiver.SelectFoodReceiver" />
+        <activity android:name=".UI.Activities.MapsActivity" />
+        <activity android:name=".UI.Profile.MyDonations" />
+        <activity android:name=".UI.Requests.GeneralDonationRequests" />
+        <activity android:name=".UI.Requests.MyDonationRequests" />
+        <activity android:name=".UI.SignUpLogin.SelectUserType" />
+        <activity android:name=".UI.SignUpLogin.SignUp" />
+        <activity android:name=".UI.SignUpLogin.SignIn" />
+        <!--
+           The API key for Google Maps-based APIs is defined as a string resource.
+           (See the file "res/values/google_maps_api.xml").
+           Note that the API key is linked to the encryption key used to sign the APK.
+           You need a different API key for each encryption key, including the release key that is used to
+           sign the APK for publishing.
+           You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDSxpMxsYjElRhWaCsofGR6NW3max-EVtQ" />
+
+        <activity
+            android:name=".UI.Fragments.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".UI.Blood.Receiver.BloodDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Chat.ChatActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".UI.Chat.InboxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Food.Receiver.FoodDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Food.Receiver.AllFoodAndUsedItems"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.congrat"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Blood.Donor.DonateBlood"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.UsedItems.Donor.DonateUsedItem"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Food.Donor.DonateFood"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.Dashboard"
+            android:exported="false" />
+        <service
+            android:name=".UI.notification.FirebaseService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".UI.notification.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+            </intent-filter>
+        </service>
+
+<!--        <service-->
+<!--            android:name=".UI.notification.MyFirebaseMessaging"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+        <activity
+            android:name=".UI.Activities.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

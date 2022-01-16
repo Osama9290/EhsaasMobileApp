@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UI.SignUpLogin.SelectUserType">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EHSAAS"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"/>
+
+
+
+    <Button
+        android:id="@+id/donor"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:text="Donor"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/receiver"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:text="Receiver"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/volunteer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_as_a_volunteer"
+        android:textAlignment="center"
+        android:textColor="@color/color_primary"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Activities.MapsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@color/color_primary">
+
+        <EditText
+            android:id="@+id/place_search"
+            android:hint="Search"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:textSize="18sp"
+            android:paddingStart="15dp"
+            android:layout_marginRight="70dp"
+            android:drawableLeft="@drawable/search2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp"
+            android:onClick="cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+
+    <!--    <RelativeLayout-->
+<!--        android:id="@+id/searh_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_above="@+id/add_more_address"-->
+<!--        android:background="@color/appred"-->
+<!--        android:orientation="vertical">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/editText"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:textColorHint="@color/white"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:background="@null"-->
+<!--                android:hint="Search Location" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/search_icon"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:onClick="cancel"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_centerVertical="true" />-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/place_autocomplete"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/toolbar"-->
+<!--        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+<!--        />-->
+<!-- -->
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/places_recycler_view"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/map"
+        android:textSize="18sp"
+        android:text="Please use search option to select the location."
+        android:onClick="searchLocation"
+        android:textColor="@color/black"
+        />
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray"
+        android:layout_below="@+id/location"
+        />
+
+
+
+
+
+</RelativeLayout>

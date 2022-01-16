@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "794454046579",
+    "firebase_url": "https://ehsaas-ef5e5-default-rtdb.firebaseio.com",
+    "project_id": "ehsaas-ef5e5",
+    "storage_bucket": "ehsaas-ef5e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794454046579:android:22f2dfc20386d2b1b8b706",
+        "android_client_info": {
+          "package_name": "com.example.ehsaas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794454046579-ai5j3vvochvgl1d44t8cnaohn9h5c5qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ehsaas",
+            "certificate_hash": "b8083051dfb3fcd00c75c4c2a2808e00ce0e417c"
+          }
+        },
+        {
+          "client_id": "794454046579-nqks9ff10o8966ash36e6def12sjpke1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgt1N8K1o6jE9OA5rikx8nWGSjI7QFh-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794454046579-nqks9ff10o8966ash36e6def12sjpke1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

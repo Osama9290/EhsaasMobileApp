@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+          <!--    sender side-->
+
+<!--    Sender Image-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sender_cardView"
+        app:cardBackgroundColor="@color/black"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="20dp"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/message_sender_image_view"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--    Sender Text Message-->
+
+    <TextView
+        android:id="@+id/sender_text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp"
+        android:maxWidth="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:text="tetx"
+        android:padding="12dp"
+        android:background="@drawable/sender_messages_layout"
+        android:textColor="@color/color_primary" />
+
+
+<!--    Sender Text Time-->
+    <TextView
+        android:id="@+id/sender_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sender_text_message"
+        android:padding="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="time"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+
+    <!--    Receiver Side-->
+
+<!--    Receiver Text Message-->
+
+    <TextView
+        android:id="@+id/receiver_text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:maxWidth="200dp"
+        android:text="text"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        android:background="@drawable/receiver_messages_layout" />
+
+<!--    Receiver Text Time-->
+
+    <TextView
+        android:id="@+id/receiver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiver_text_message"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:text="time"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+
+<!--    Receiver Image-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="6dp"
+        app:cardBackgroundColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/message_reciever_image_view"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textAlignment="center"
+        android:padding="12dp"
+        android:background="@color/color_primary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="22sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            >
+            <TextView
+                android:id="@+id/blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_primary"
+                android:paddingBottom="10dp"
+                />
+
+            <View
+                android:id="@+id/blood_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/blood"
+                android:background="@color/color_primary"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            >
+            <TextView
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_gray"
+                android:paddingBottom="10dp"
+                />
+            <View
+                android:id="@+id/food_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/food"
+                android:visibility="gone"
+                android:background="@color/color_primary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            >
+            <TextView
+                android:id="@+id/usedItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Used Items"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_gray"
+                android:paddingBottom="10dp"
+                />
+            <View
+                android:id="@+id/usedItems_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/usedItems"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@color/color_primary"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="120dp"
+            android:textColor="@color/black"
+            android:background="@drawable/background_fields"
+            android:hint="Search Blood Group"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_btn"
+            android:text="GO"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
